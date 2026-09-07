@@ -1,0 +1,55 @@
+{
+  "@@locale": "en",
+  "appName": "Pathshala",
+  "home": "Home",
+  "calendar": "Calendar",
+  "alerts": "Alerts",
+  "settings": "Settings",
+  "notifications": "Notifications",
+  "markAllRead": "Mark all read",
+  "noNotifications": "No notifications yet.",
+  "failedToLoad": "Failed to load: {error}",
+  "@failedToLoad": {
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "retry": "Retry",
+  "welcomeTeacher": "Welcome, {name}",
+  "@welcomeTeacher": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "roomsCount": "{count, plural, =1 {1 Room} other {{count} Rooms}}",
+  "@roomsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "manageRooms": "Tap to manage your tuition rooms",
+  "createRoom": "Create a new room",
+  "room": "Room",
+  "failedToLoadRoom": "Failed to load room: {error}",
+  "@failedToLoadRoom": {
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "joinCode": "Join code: {code}",
+  "@joinCode": {
+    "placeholders": {
+      "code": {}
+    }
+  },
+  "students": "Students",
+  "attendance": "Attendance",
+  "classSchedule": "Class Schedule",
+  "messagesPolls": "Messages & Polls",
+  "paymentsDues": "Payments & Dues",
+  "assignments": "Assignments",
+  "examsLeaderboard": "Exams & Leaderboard",
+  "parentAccess": "Parent Access"
+}

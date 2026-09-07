@@ -1,0 +1,77 @@
+name: pathshala
+description: "Tuition management app connecting teachers, students, admins, and parents."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Backend
+  supabase_flutter: ^2.5.6
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Routing
+  go_router: ^14.2.0
+
+  # Local storage (offline attendance sync queue, cached prefs)
+  shared_preferences: ^2.2.3
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+  # Connectivity (for offline sync detection)
+  connectivity_plus: ^6.0.3
+
+  # Localization (Bengali/English)
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.20.2
+
+  # UI helpers
+  cupertino_icons: ^1.0.6
+  cached_network_image: ^3.3.1
+  image_picker: ^1.1.2
+  file_picker: ^8.0.5
+  share_plus: ^10.0.0        # payment history export (§2.4)
+  url_launcher: ^6.3.0       # opening curated content links (§3, §4)
+  fl_chart: ^0.68.0        # performance graphs / leaderboard charts
+  table_calendar: ^3.1.2   # in-app calendar view
+  intl_phone_field: ^3.2.0 # phone/OTP entry
+
+  # Utilities
+  uuid: ^4.4.0
+  equatable: ^2.0.5
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/icon.png
+  # fonts:
+  #   - family: HindSiliguri   # good Bengali-support font
+  #     fonts:
+  #       - asset: assets/fonts/HindSiliguri-Regular.ttf
+  #       - asset: assets/fonts/HindSiliguri-Bold.ttf
+  #         weight: 700
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon.png
+  adaptive_icon_background: "#0C7172"
+  adaptive_icon_foreground: assets/icon_foreground.png
+  min_sdk_android: 21
+  remove_alpha_ios: true
